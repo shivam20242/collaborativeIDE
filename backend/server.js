@@ -125,7 +125,7 @@ app.get('/health', (req, res) => {
   res.json({ message: 'Collaborative Editor API is running!' });
 });
 
-const PORT = 5000;
+const PORT = process.env.PORT;
 
 server.listen(PORT, () => {
   console.log(`Server running on port ${PORT}`);
